@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="body.css">
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+    <script src="index.js"></script>
+
+
+    <title>online shopping site for everything!!!!</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .container2{
+        position: relative;
+        top: 336px;
+        left: -273px;
+        font-family: "Amazon Ember",Arial,sans-serif;
+    }
+    .no_order{
+        padding: 15px;
+        background-color: skyblue;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "Amazon Ember",Arial,sans-serif;
+    }
+    .no_order:hover{
+        background-color: steelblue;
+    }
+
+    *{
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+ .flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+} 
+/* .pro{
+    background-color:red;
+    height: 1.5px;
+    animation: width 3s linear   forwards;
+} */
+ /* @keyframes width {
+    0%{
+        width: 50%;
+    }
+    60%{
+        width: 70%;
+    }
+    80%{
+        width: 100%;
+    }
+    
+}  */ 
+/* nav bar1 starts */
+header{
+    background-color:black;
+}
+
+nav{
+    display: flex;
+}
+nav ul{
+    height: 58px;
+    display: flex;
+    
+    justify-content: flex-start;
+    align-items: center;
+
+}
+nav ul li{
+    list-style: none;
+    /* display:inline-flex; */
+    /* align-items: center */
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 12px;
+   
+    
+} 
+ul li a{
+    text-decoration: none;
+    padding: 20px 20px;
+    color: white; 
+    
+}
+li a:hover{
+    color: grey;
+    
+}
+ .active {
+     background-color: darkblue;
+   
+}
+
+.search{
+    position: relative;
+    left: -85px;
+    display: flex;
+    align-items: center;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    
+    
+    
+}
+.search input[type=text]{
+    padding: 7px;
+    width: 630px;
+}
+ .fsearch {
+     /* display: flex; */
+   position: relative;
+   left: -17px;
+    padding: 9px;
+    background: rgba(255, 166, 0, 0.973);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: "Amazon Ember",Arial,sans-serif;
+  }
+  .fsearch:hover {
+    background-color: orange;
+  }
+  .drop{
+      position: relative;
+      left: -618px;
+      top:26px;
+     
+  }
+  
+   
+
+  .flag{
+    position: relative;
+    left: -620px;
+    top:26px;
+  }
+  .order{
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    position: relative;
+    right: 780px;
+    top: 5px;
+    width: 100px;
+    height: 26px;
+    margin: 17px 26px 17px 400px;
+    border-radius: 6px;
+    background-color:black;
+    color:white;
+    font-size:medium;
+    border: black;
+    padding: 15px;
+    cursor: pointer;
+    font-family: "Amazon Ember",Arial,sans-serif;
+
+    
+  }
+ 
+  .order:hover{
+    border: 2px solid white;
+   
+}
+
+
+.cart{
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    position: relative;
+    right: 1096px;
+    top: 5px;
+    width: 100px;
+    height: 26px;
+    margin: 17px 26px 17px 400px;
+    border-radius: 6px;
+    background-color:black;
+    color:white;
+    font-size:medium;
+    border: black;
+    padding: 15px;
+    cursor: pointer;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    
+  }
+  .cart:hover{
+    border: 2px solid white;
+   
+}
+#cart{
+    position: relative;
+    right: 700px;
+    width: 40px;
+    /* top: 5px; */
+    
+
+}
+
+  
+  
+
+
+.btn{
+    width: 60px;
+    height: 26px;
+    border-radius: 6px;
+    color: black;
+    cursor: pointer;
+    
+}
+.btn2{
+
+    display: flex;
+    align-items: center; 
+    text-align: center;
+    position: relative;
+    right: 332px;
+    top: 5px;
+    width: 125px;
+    height: 26px;
+    margin: 17px 26px 17px 400px;
+    border-radius: 6px;
+    color:white;
+    font-size: medium;
+    background-color:black;
+    border: black;
+    padding: 15px;
+    cursor: pointer;
+    
+}
+.btn2:hover{
+    border: 2px solid white;
+   
+}
+
+   
+
+
+
+.btn3{
+    display: flex;
+    align-items: center;
+    width: 65px;
+    height: 26px;
+    margin: 17px 100px 17px auto;
+    border-radius: 6px;
+    color: blue;
+    background-color: white;
+    padding: 12px;
+    cursor:pointer;
+}
+.search input{
+
+    width: 280px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 0px 20px 0px 60px;
+    padding: 0px 12px;
+    color: black;
+}
+/* nav bar 1 ends */
+
+/* nav bar 2 */
+
+
+.nav2{
+    width: 1519px;
+    height: 50px;
+    background-color:rgba(0, 0, 0, 0.158);
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font: medium;
+    color: rgba(0, 0, 0, 0.808);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    background-color: gainsboro;
+    text-decoration: none;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  h4{
+      color:black;
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      
+      display: block;
+      transition: 0.3s;
+  }
+  
+  .openbtn {
+    position: relative;
+    left: -8px;
+    top: -15px;
+    font:medium;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+    border: 1px solid white;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  /* nav bar2 end */
+
+ .container{
+ min-height: calc(100vh - 10vh - 90px);
+} 
+
+
+
+
+
+   
+footer{
+    background-color: black;
+    height: 10vh;
+    
+}
+footer a{
+   color: white;
+}
+/* added css */
+
+.content{
+  height: 400px;
+  width: 1467px;
+  position: relative;
+  left: 27px;
+  overflow: hidden;
+  box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.content .images{
+  height: 100%;
+  width: 100%;
+}
+.images img{
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.car{
+    max-width: 91vw;
+    margin: 20px 40px ;
+    
+}
+.cards{
+  display: flex;
+  overflow-x: scroll;
+  
+}
+.card-item {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 55px;
+  cursor: pointer;
+}
+.lines p{
+   display: flex;
+   justify-content: center;
+   
+}
+
+/* back to top button css */
+#myBtn{
+     width: 100%;
+     background-color: #007185;
+     height: 40px;
+     color: white;
+     cursor: pointer;
+}
+#myBtn:hover{
+  background-color:gray;
+}
+.navFooterColHead{
+  color: white;
+  display: inline-block;
+}
+
+.row{
+  
+  display: flex;
+  justify-self: flex-start;
+  padding:40px 348px;
+  background-color: #0F1111;
+ 
+  
+}
+.column ul li{
+ list-style: none;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  
+}
+ul li a{
+  color:rgba(255, 255, 255, 0.733) ;
+}
+h4{
+  color: white;
+  position: relative;
+  left: -13px;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Amazon Ember",Arial,sans-serif;
+}
+ a:hover{
+  text-decoration:underline ;
+}
+
+p a{
+  text-decoration: none;
+}
+
+
+
+    
+    
+   
+    
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               <a href="index" ><img src="images/amazon.png" alt="" width="130px"></a>
+            </div>
+
+
+            <!-- <ul>
+                <li class="active"><a href="home.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul> -->
+            <div class="search">
+                <input type="text" placeholder="search here">
+                <button class="fsearch"  onclick="refreshPage()">&#128269</button>
+            </div>
+            <div class="login">
+                <button class="btn2" onclick="window.location.href='login'">login/signup</button>
+
+            </div>
+
+
+            <div class="flag">
+                <img src="images/Flag-India.jpg" alt="" width="30px">
+            </div>
+            <div class="drop">
+
+                <select name="cars" id="cars">
+
+                    <option value="AF">EN</option>
+                    <option value="AL">HI</option>
+                    <option value="DZ">TA</option>
+                    <option value="DZ">TE</option>
+                    <option value="DZ">KN</option>
+                    <option value="DZ">ML</option>
+                    <option value="DZ">MR</option>
+                    <option value="DZ">BN</option>
+
+
+                </select>
+            </div>
+            <button class="order" onclick="window.location.href='orders'"> Orders</button>
+            <img id="cart" src="images/cartt.png" alt="">
+            <button class="cart" onclick="window.location.href='cart'">Cart</button>
+
+
+
+
+        </nav>
+        <!-- second nav -->
+        <div class="nav2">
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <h4 style="color: black;padding-left: 42px;">Trending</h4>
+                <a href="#">Best Sellers</a>
+                <a href="#">New releases</a>
+                <a href="#">Movers and Shakers</a><hr>
+                <h4 style="color: black;padding-left: 42px;">Shop by Department</h4>
+                <a href="#">Mobiles, Computers</a>
+                <a href="#">Tv, Appliances, Electronics</a>
+                <a href="#">Women's Fashion</a>
+                <a href="#">Men's Fashion</a><hr>
+                <h4 style="color: black;padding-left: 42px;">Programs & Features</h4>
+                <a href="#">Gift card & Mobile Recharges</a>
+                <a href="#">Flight Tickets</a>
+                <a href="#">#FoundItOnAmazon</a>
+                <a href="#">Amazon Outlet</a><hr>
+                <h4 style="color: black;padding-left: 42px;">Help & Settings</h4>
+                <a href="contact">Contact</a>
+                <a href="#">About</a>
+                <a href="sign-out">Sign-out</a>
+              </div>
+              
+              <div id="main">
+                <button class="openbtn" onclick="openNav()">☰ All</button>
+                <button class="openbtn" onclick="refreshPage()">Fresh</button>
+                <button class="openbtn" onclick="refreshPage()">Amazon Pay</button>
+                <button class="openbtn" onclick="refreshPage()">Gift Cards</button>
+                <button class="openbtn" onclick="refreshPage()">Best Sellers</button>
+                <button class="openbtn" onclick="refreshPage()">Browsing History</button>
+                <button class="openbtn" onclick="refreshPage()">Kindle eBooks</button>
+                <button class="openbtn" onclick="refreshPage()">Buy Again</button>
+                <button class="openbtn" onclick="refreshPage()">Baby</button>
+                <button class="openbtn" onclick="refreshPage()">Pet Supplies</button>
+                <button class="openbtn" onclick="refreshPage()" >Gift ideas</button>
+               <button class="openbtn"  onclick="refreshPage()"><img src="images/prime.jpg" alt="" width="55px"></button>
+               <button class="openbtn"  onclick="refreshPage()"><img src="images/amlogo.jpg" alt="" width="20px">    Shopping made easy | Download the app</button>
+                
+                
+              </div>
+              
+              
+              
+        </div>
+        
+
+    </header>
+    <br>
+    <div class="container">
+        <img id="dog" src="images/dog.png" alt=""> <br>
+        <div class="container2">
+            <h1>OOPS!</h1>
+            <h3>You have no orders yet</h3> <br>
+            <button class="no_order" onclick="window.location.href='index'">Continue Shopping</button><br> 
+            </div>
+        
+
+    </div>
+    <script>
+    //  2nd nav slide bar ALL
+ function openNav() {
+ document.getElementById("mySidebar").style.width = "250px";
+ document.getElementById("main").style.marginLeft = "250px";
+ }
+        
+function closeNav() {
+document.getElementById("mySidebar").style.width = "0";
+document.getElementById("main").style.marginLeft= "0";
+}
+
+// to refresh page
+
+function refreshPage(){
+    window. location. reload();
+    }
+
+function validate(){
+    window. location. href('index.html');
+}
+
+
+var indexValue = 0;
+      function slideShow(){
+        setTimeout(slideShow, 4000);
+        var x;
+        const img = document.getElementsByClassName("images");
+        for(x = 0; x < img.length; x++){
+          img[x].style.display = "none";
+        }
+        indexValue++;
+        if(indexValue > img.length){indexValue = 1}
+        img[indexValue -1].style.display = "block";
+      }
+      slideShow();
+      
+
+// Back to top button funtionality
+
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+   
+        
+</body>
+    </html>
